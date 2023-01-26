@@ -1,0 +1,40 @@
+import re
+
+def government_chatbot():
+    print("Welcome to the Government of the Philippines Chatbot!")
+    print("I can provide information about various government agencies and services.")
+    print("Type 'exit' to exit the chatbot.")
+    while True:
+        user_input = input("You: ")
+        if re.match(r'exit', user_input):
+            print("Thank you for using the chatbot! Have a great day.")
+            break
+        elif re.match(r'Department of Education', user_input):
+            print("The Department of Education (DepEd) is responsible for managing and supervising the country's basic education system.")
+            print("Website: https://www.deped.gov.ph/")
+        elif re.match(r'Department of Health', user_input):
+            print("The Department of Health (DOH) is responsible for ensuring the availability of health services and promoting health and well-being.")
+            print("Website: https://doh.gov.ph/")
+        elif re.match(r'Department of Social Welfare and Development', user_input):
+            print("The Department of Social Welfare and Development (DSWD) is responsible for providing social protection and welfare services to vulnerable and marginalized individuals and communities.")
+            print("Website: https://www.dswd.gov.ph/")
+        elif re.match(r'Department of Transportation', user_input):
+            print("The Department of Transportation (DOTr) is responsible for planning, developing, and maintaining an efficient transportation system in the country.")
+            print("Website: https://caraga.dotr.gov.ph/, https://lto.gov.ph/")
+        elif re.match(r'Department of Justice', user_input):
+            print("The Department of Justice (DOJ) is the government's principal law agency. As such, the DOJ serves as the government's prosecution arm and administers the government's criminal justice system by investigating crimes, prosecuting offenders and overseeing the correctional system.")
+            print("Website: https://www.doj.gov.ph/")
+        elif re.match(r'Department of Tourism', user_input):
+            print("The Department of Tourism (DOT) is the primary planning, implementing, and regulatory government agency tasked to develop and promote the Philippine tourism.")
+            print("Website: http://www.tourism.gov.ph/Default.aspx")
+        elif re.match(r'Department of Information and Communication Technology', user_input):
+            print("The Department of Information and Communications Technology (DICT) shall be the primary policy, planning, coordinating, implementing, and administrative entity of the Executive Branch of the government that will plan, develop, and promote the national ICT development agenda. ( RA 10844)")
+            print("Website: https://dict.gov.ph/contact-us/")
+        elif re.match(r'Department of Science and Technology', user_input):
+            print("The Department of Science and Technology (DOST) is the primary science and technology body in the country, charged with pursuing the state policy of supporting local efforts in science, technology, and research and development.")
+            print("Website: https://www.dost.gov.ph/")
+        else:
+            print("I'm sorry, I don't understand your question. Can you please rephrase it or ask about a different topic related to the government of the Philippines?")
+            print("For example 'Type: Department of Education' ")
+
+government_chatbot()
